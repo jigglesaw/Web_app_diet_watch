@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Minor Mini Project</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Group 4</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Group 4</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Exercise Recommendation</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the amount of Calories and recommend a good Exercise
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Gender</b></label>
+            <br>
+          <input placeholder="Gender " name="Gender" id="first_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Age </b></label>
+            <br>
+          <input id="_name" name="Age" placeholder="Age"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Height</b></label>
+            <br>
+          <input id="_name" name="Height" placeholder="Height" type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+          <label for="_name"><b>Weight</b></label>
+          <br>
+        <input id="_name" name="Weight" placeholder="Weight" type="text" class="validate">
+
+      </div>
+      <div class="input-field col s4">
+        <label for="_name"><b>Duration</b></label>
+        <br>
+      <input id="last_name" name="Duration" placeholder="Height" type="text" class="validate">
+
+    </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+      <br>
+      <br>
+        {{pred}}<br>
+        {{pred2}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"></h5>
+          <p class="grey-text text-lighten-4"></p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+       <a class="orange-text text-lighten-3" href="http://materializecss.com"></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
